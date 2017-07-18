@@ -19,6 +19,22 @@ body > section.banner {
   padding-bottom: 20vh;
   height: 90vh;
 }
+body > section.articles > article {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  background-position: center center;
+  background-size: cover;
+}
+body > section.articles > article > p {
+  background-color: rgba(90,155,149, 0.75);
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 18px;
+  border-radius: 8px;
+}
 body > section.overlay {
   display: none;
   position: fixed;
@@ -28,7 +44,6 @@ body > section.overlay {
   top: 0;
   left: 0;
 }
-
 body > section.overlay.show {
   display: inline-block;
 }
@@ -153,6 +168,19 @@ body#home > section.banner > div {
   -ms-animation: rotating 20s linear infinite;
   -o-animation: rotating 20s linear infinite;
   animation: rotating 20s linear infinite;
+}
+
+/*
+  About
+*/
+body#about > section.articles > article:nth-of-type(1) {
+  background-image: url('img/about/1.jpg');
+}
+body#about > section.articles > article:nth-of-type(2) {
+  background-image: url('img/about/2.jpg');
+}
+body#about > section.articles > article:nth-of-type(3) {
+  background-image: url('img/about/3.jpg');
 }
 
 /*
