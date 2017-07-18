@@ -1,9 +1,14 @@
 /*
+  Color scheme
   rosey roses: FF8591
   peachy keen: EFAAA3
   blue sky: 8CAAA2
   acrobatic: 5A9B95
   our inspiration now: 44878F
+*/
+
+/*
+  Header
 */
 header {
   padding-top: 40px;
@@ -18,10 +23,39 @@ header > nav > a {
   padding: 20px;
   text-transform: uppercase;
   color: white;
-  font-size: 18px;
+  font-size: 14px;
 }
 header > nav > a:hover {
   background-color: #FF8591;
   color: white;
   text-decoration: none;
+}
+
+/*
+  Home
+*/
+body#home > section.banner {
+  background-image: url('img/home.jpg');
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+body#home > section.banner > div {
+  opacity: 0.75;
+  display: inline-block;
+  width: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 7vw;
+  padding-bottom: 7vw;
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px black;
+  color: white;
+  background: #8CAAA2; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#8CAAA2, #44878F); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#8CAAA2, #44878F); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#8CAAA2, #44878F); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#8CAAA2, #44878F); /* Standard syntax */
 }
