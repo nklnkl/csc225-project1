@@ -25,15 +25,40 @@ header > nav > a {
   text-transform: uppercase;
   color: white;
   font-size: 14px;
-}
-header > nav > a:hover {
-  background-color: white;
-  color: black;
-  text-decoration: none;
+  animation-name: navUnHover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 header > nav > a.active {
   background-color: #FF8591;
   color: white;
+}
+header > nav > a:hover {
+  text-decoration: none;
+  animation-name: navHover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navHover {
+  from {
+    background-color: none;
+    color: white;
+  }
+  to {
+    background-color: white;
+    color: black;
+  }
+}
+@keyframes navUnHover {
+  from {
+    background-color: white;
+    color: black;
+  }
+  to {
+    background-color: none;
+    color: white;
+  }
 }
 
 
