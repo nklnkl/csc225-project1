@@ -18,4 +18,17 @@ $(document).ready(function () {
       break;
   }
 
+  // When a gallery img div is clicked
+  $('body#gallery > section.container-fluid > div.row > div').click(function() {
+    // Get the image url of the clicked image.
+    var bg = $(this).css('background-image');
+    // Set the overlay div's background to that image.
+    $('body#gallery > section.overlay > div').css('background-image', bg);
+    // Show the overlay.
+    $('body#gallery > section.overlay').show();
+  });
+  $('body#gallery > section.overlay').click( function () {
+    $('body#gallery > section.overlay').hide();
+  });
+
 });

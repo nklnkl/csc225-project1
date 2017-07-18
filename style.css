@@ -19,6 +19,19 @@ body > section.banner {
   padding-bottom: 20vh;
   height: 90vh;
 }
+body > section.overlay {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.75);
+  top: 0;
+  left: 0;
+}
+
+body > section.overlay.show {
+  display: inline-block;
+}
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);
@@ -128,6 +141,65 @@ body#home > section.banner > div {
   -ms-animation: rotating 20s linear infinite;
   -o-animation: rotating 20s linear infinite;
   animation: rotating 20s linear infinite;
+}
+
+/*
+  Gallery
+*/
+body#gallery > section.container-fluid > div.row {
+  background-color: #5A9B95;
+}
+body#gallery > section.container-fluid > div.row > div {
+  height: 25vw;
+  min-height: 500px;
+  background-size: cover;
+}
+body#gallery > section.container-fluid > div.row > div:hover {
+  cursor: pointer;
+}
+body#gallery > section.container-fluid > div.row > div:nth-of-type(1) {
+  background-image: url('img/gallery/1.jpg');
+}
+body#gallery > section.container-fluid > div.row > div:nth-of-type(2) {
+  background-image: url('img/gallery/2.jpg');
+}
+body#gallery > section.container-fluid > div.row > div:nth-of-type(3) {
+  background-image: url('img/gallery/3.jpg');
+}
+body#gallery > section.container-fluid > div.row > div:nth-of-type(4) {
+  background-image: url('img/gallery/4.jpg');
+}
+body#gallery > section.container-fluid > div.row > div:nth-of-type(5) {
+  background-image: url('img/gallery/5.jpg');
+}
+body#gallery > section.container-fluid > div.row > div:nth-of-type(6) {
+  background-image: url('img/gallery/6.jpg');
+}
+body#gallery > section.container-fluid > div.row > div:nth-of-type(7) {
+  background-image: url('img/gallery/7.jpg');
+}
+body#gallery > section.container-fluid > div.row > div:nth-of-type(8) {
+  background-image: url('img/gallery/8.jpg');
+}
+body#gallery > section.container-fluid > div.row > div:nth-of-type(9) {
+  background-image: url('img/gallery/9.jpg');
+}
+body#gallery > section.container-fluid > div.row > div:nth-of-type(10) {
+  background-image: url('img/gallery/10.jpg');
+}
+body#gallery > section.container-fluid > div.row > div:nth-of-type(11) {
+  background-image: url('img/gallery/11.jpg');
+}
+body#gallery > section.overlay > div {
+  width: 50vw;
+  height: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  background-color: white;
+  background-size: cover;
+  background-position: center center;
+  opacity: 1 !important;
 }
 
 /*
