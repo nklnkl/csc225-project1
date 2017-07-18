@@ -1,0 +1,27 @@
+/*
+  rosey roses: FF8591
+  peachy keen: EFAAA3
+  blue sky: 8CAAA2
+  acrobatic: 5A9B95
+  our inspiration now: 44878F
+*/
+header {
+  padding-top: 40px;
+  background-color: #EFAAA3;
+}
+header > nav {
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+header > nav > a {
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+}
+header > nav > a:hover {
+  background-color: #FF8591;
+  color: white;
+  text-decoration: none;
+}
