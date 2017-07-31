@@ -95,7 +95,7 @@ header {
   padding-top: 40px;
   background-color: #EFAAA3;
 }
-header > nav {
+header > nav.large {
   padding-left: 20vw;
   padding-right: 20vw;
 }
